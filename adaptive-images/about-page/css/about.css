@@ -1,0 +1,29 @@
+.page {
+  display: flex;
+  }
+
+@media (min-width: 961px) {
+  .page {
+    flex-direction: row-reverse;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+
+ .aside {
+    width: 320px;
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+} 
+
+@media (max-width: 960px) {
+  .page {
+    flex-wrap: wrap;
+  }
+
+  .aside__menu {
+    display: none;
+  }
+}
